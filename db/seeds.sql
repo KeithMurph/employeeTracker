@@ -28,13 +28,13 @@ VALUES  ("Analysis Associate", 150000, 1),
 
 -- employees values
 INSERT INTO employees(first_name, last_name, roles_id, manager_id)
-VALUES  ("Harry", "Potter" , 2, 7),
-        ("Ron","Weasley", 3, 9),
-        ("Hermione","Granger", 4, 13),
-        ("Tom","Riddle", 5, 18),
-        ("Albus","Dumbledore", 1, 20),
-        ("Severous","Snape", 2, 7),
-        ("Luna","Lovegood", 3, 9),
-        ("Draco","Malfoy", 5, 18),
-        ("Sirius","Black", 1, 20),
-        ("Neville","Longbottom", 4, 13);
+VALUES  ("Harry", "Potter",2),
+        ("Ron","Weasley",3,),
+        ("Hermione","Granger",4),
+        ("Tom","Riddle",5,),
+        ("Albus","Dumbledore",1),
+        ("Severous","Snape",2),
+        ("Luna","Lovegood",3),
+        ("Draco","Malfoy",5),
+        ("Sirius","Black",1),
+        ("Neville","Longbottom",4);
