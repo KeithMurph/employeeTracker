@@ -59,3 +59,6 @@ function mainMenu () {
 // addRole() => {}
 // viewAllDepartments () => {}
 // addDepartment() => {}
+
+
+mainMenu();
