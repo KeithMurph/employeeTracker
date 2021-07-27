@@ -1,12 +1,12 @@
 DROP DATABASE IF EXISTS managment_db;
-CREATE managment_db;
+CREATE DATABASE managment_db;
 
 
 USE managment_db;
 
 
 -- department table
-CREATE TABLE department (
+CREATE TABLE department(
     id INT AUTO_INCREMENT PRIMARY KEY,
     deparment_name VARCHAR(30) NOT NULL
 
@@ -14,11 +14,11 @@ CREATE TABLE department (
 );
 
 -- roles table
-CREATE TABLE roles (
+CREATE TABLE roles(
     id INT AUTO_INCREMENT PRIMARY KEY,
     job_title VARCHAR(30) NOT NULL,
     salary DECIMAL NOT NULL,
-    deparment_id INT NOT NULL,
+    deparment_id INT,
     
     
     FOREIGN KEY (deparment_id)

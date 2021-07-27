@@ -4,7 +4,7 @@ USE managment_db;
 
 -- department values
 
-INSERT INTO department (id, deparment_name)
+INSERT INTO department(id, deparment_name)
 VALUES  ("Research"),
         ("Engineering"),
         ("Marketing"),
@@ -13,7 +13,7 @@ VALUES  ("Research"),
 
 
 -- roles values
-INSERT INTO roles (job_title, salary, deparment_id)
+INSERT INTO roles(job_title, salary, deparment_id)
 VALUES  ("Analysis Associate", 150000, 1),
         ("Research Assistant", 85000, 1),
         ("Software Engineer", 120000, 2),
@@ -27,7 +27,7 @@ VALUES  ("Analysis Associate", 150000, 1),
 
 
 -- employees values
-INSERT INTO employees (first_name, last_name, roles_id, manager_id)
+INSERT INTO employees(first_name, last_name, roles_id, manager_id)
 VALUES  ("Harry", "Potter" , 2, 7),
         ("Ron","Weasley", 3, 9),
         ("Hermione","Granger", 4, 13),

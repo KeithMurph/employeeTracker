@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
-
+const table = require("console.table");
 
 const db = mysql.createConnection(
   {
@@ -9,7 +9,10 @@ const db = mysql.createConnection(
     user: "root",
     // MySQL password
     password: "password",
-    database: "managment_db"
+    database: "managment_db",
   },
   console.log(`Connected to the managment_db database.`)
 );
+
+inquirer();
+table();
