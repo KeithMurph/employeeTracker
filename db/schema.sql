@@ -4,26 +4,32 @@ USE managment_db
 
 -- ROLES DEPARTMENTS EMPLOYESS
 CREATE TABLE roles (
-    id INT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     job_title VARCHAR(30) NOT NULL,
-    roles_department VARCHAR(30) NOT NULL,
+    salary DECIMAL NOT NULL,
+    deparment_id INT NOT NULL,
+    FOREIGN KEY (deparment_id)
+    REFERENCES deparment(id)
 
 );
 
 CREATE TABLE department (
-    id INT,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     deparment_name VARCHAR(30) NOT NULL,
+
 
 );
 
 
-CREATE TABLE employee (
-    id INT, 
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY, 
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    employee_job_title VARCHAR(50) NOT NULL,
-    employee_department VARCHAR(50) NOT NULL,
-    salary INT NOT NULL,
-    employee_manager VARCHAR(50) NOT NULL
+    roles_id  INT,
+    manager_id INT,
+    FOREIGN KEY (roles_id)
+    REFERENCES roles(id)
+    FOREIGN KEY (manager_id)
+    FOREIGN KEY employees(id)
 
 );
