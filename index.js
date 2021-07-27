@@ -67,22 +67,7 @@ function mainMenu () {
             
 
 
-//  .then choice
-// view employees run viewEmployees function
 
-// add employee run addEmployee function
-
-// update employee role run updateEmployeeRole
-
-// View all roles run viewAllRoles
-
-// add role run addNewRole
-
-// view all departments run viewAllDepartments
-
-// add department runs addDepartment
-
-// quit 
 
 
 
