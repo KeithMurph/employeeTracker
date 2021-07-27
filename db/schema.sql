@@ -2,13 +2,13 @@ DROP DATABASE IF EXISTS managment_db;
 CREATE managment_db;
 
 
-USE managment_db
+USE managment_db;
 
 
 -- department table
 CREATE TABLE department (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    deparment_name VARCHAR(30) NOT NULL,
+    deparment_name VARCHAR(30) NOT NULL
 
 
 );
@@ -19,8 +19,11 @@ CREATE TABLE roles (
     job_title VARCHAR(30) NOT NULL,
     salary DECIMAL NOT NULL,
     deparment_id INT NOT NULL,
+    
+    
     FOREIGN KEY (deparment_id)
     REFERENCES deparment(id)
+    ON DELETE CASCADE
 
 );
 
@@ -34,9 +37,12 @@ CREATE TABLE employees (
     last_name VARCHAR(50) NOT NULL,
     roles_id  INT,
     manager_id INT,
+    
     FOREIGN KEY (roles_id)
     REFERENCES roles(id)
+   ON DELETE CASCADE
+   
     FOREIGN KEY (manager_id)
-    FOREIGN KEY employees(id)
-
+    REFERENCES employees(id)
+    ON DELETE CASCADE
 );
