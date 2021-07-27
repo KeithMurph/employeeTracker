@@ -1,8 +1,19 @@
 DROP DATABASE IF EXISTS managment_db;
 CREATE managment_db;
+
+
 USE managment_db
 
--- ROLES DEPARTMENTS EMPLOYESS
+
+-- department table
+CREATE TABLE department (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    deparment_name VARCHAR(30) NOT NULL,
+
+
+);
+
+-- roles table
 CREATE TABLE roles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     job_title VARCHAR(30) NOT NULL,
@@ -13,14 +24,10 @@ CREATE TABLE roles (
 
 );
 
-CREATE TABLE department (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    deparment_name VARCHAR(30) NOT NULL,
 
 
-);
 
-
+-- employee table
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY, 
     first_name VARCHAR(50) NOT NULL,
