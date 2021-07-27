@@ -19,8 +19,8 @@ function mainMenu () {
     inquirer.prompt([
         {
             type: 'list',
-            name: 'viewDatabase'
-            message: 'What would you like to do?',
+            name: 'viewDatabase',
+            message:'What would you like to do?',
             choices: [ "View All Employees",
                         "Add Employee",
                         "Update Employee Role",
