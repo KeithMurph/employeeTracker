@@ -1,10 +1,9 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
 const table = require("console.table");
-const { listenerCount } = require("events");
 
-const db = mysql.createConnection(
-  {
+
+const db = mysql.createConnection({
     host: "localhost",
     // MySQL username,
     user: "root",
@@ -12,7 +11,7 @@ const db = mysql.createConnection(
     password: "password",
     database: "managment_db",
   },
-  console.log(`Connected to the managment_db database.`)
+  console.log('Connected to the managment_db database.')
 );
 
 function mainMenu () {
