@@ -28,7 +28,42 @@ function mainMenu () {
                         "View All Departments",
                         "Add Department",
                         "Quit"]
-        }])}         
+        }])
+      .then(function(answer) {
+        switch(choice.viewDatabase){
+          case "View All Employess":
+            viewAllEmployees();
+          break;
+          case "Add Employee":
+            addEmployee();
+          break;
+          case "Update Employee Role":
+            updateEmployeeRole();
+           break;
+          case "View All Roles":
+            viewAllRoles();
+            break;
+            case "Add Role":
+            addRole(); 
+            break;
+            case "View All Departments":
+            viewAllDeparments();
+            break;
+            case "Add Department":
+              addDepartment();
+              break;
+            case "Quit":
+            quit();
+            break;
+
+
+        }
+
+      })
+      
+      
+      
+      }         
             
 
 
@@ -46,6 +81,8 @@ function mainMenu () {
 // view all departments run viewAllDepartments
 
 // add department runs addDepartment
+
+// quit 
 
 
 
