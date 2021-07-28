@@ -14,6 +14,10 @@
  - [Questions](#questions)
 
  ## Installation
+ Dependencies:
+ Inquirer
+ mysql2
+ console.table
  
 <!--  fill out-->
  ## Usage
