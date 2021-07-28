@@ -17,7 +17,9 @@
  
 <!--  fill out-->
  ## Usage
-<!--  fill out  -->
+![employeeTracker screenshot1](https://user-images.githubusercontent.com/85463607/127275243-bdc1ad97-4d97-4392-8628-8b4690ba31cd.png)
+![employeeTracker screenshot1](https://user-images.githubusercontent.com/85463607/127275248-3874330a-6d81-47c0-a467-ceb9a04af9c9.png)
+
     
    
 
