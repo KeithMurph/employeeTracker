@@ -205,7 +205,7 @@ async function addEmployee() {
           {
             first_name: addname.first,
             last_name: addname.last,
-            roles_id: roleId,
+            role_id: roleId,
             manager_id: manager_id,
           },
           (err, res) => {
